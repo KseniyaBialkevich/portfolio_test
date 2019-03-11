@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<title>Kseniya Bialkevich</title>
+<style>
+
+body {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.first_container {
+    background: #EFF1F2; 
+    padding-top: 124px;
+    padding-bottom: 124px;
+}
+
+.photo {
+    width: 340px; 
+    height: 340px;
+	background-image: url(https://pp.userapi.com/c837729/v837729080/300c9/Z4846XJFM0k.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 170px;
+    margin: auto;
+    margin-bottom: 36px;
+}
+
+.block_1 {
+    margin: auto;
+    width: 606px; 
+    height: 44px;
+    margin-bottom: 8px;
+}
+
+.name {
+	font-family: Montserrat-ExtraBold;
+	font-size: 40px;
+	color: #000000;
+	text-align: center;
+	line-height: 44px;
+    font-weight: bold;
+}
+
+.block_2 {
+    margin: auto;
+    width: 504px; 
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.txt_1 {
+	opacity: 0.7;
+	font-family: PTMono-Regular;
+	font-size: 14px;
+	color: #000000;
+	text-align: center;
+	line-height: 20px;
+}
+
+.contact_btn {
+	border: none;
+    margin: auto;
+	width: 280px;
+	background: #0059D9;
+	border-radius: 4px;
+    padding: 14px;
+	font-family: Montserrat-ExtraBold;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 24px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact_btn:hover, .btn_send:hover {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.contact_btn:active, .btn_send:active {
+	opacity: 0.7;
+	background: #0059D9;
+}
+
+
+.second_container {
+    background: #FFFFFF;
+    padding-top: 100px;
+    padding-bottom: 115px;
+}
+
+.block_3 {
+    max-width: 700px;
+    height: 36px;
+    margin: auto;
+    margin-bottom: 16px;
+}
+
+.txt_2 {
+	font-family: Montserrat-ExtraBold;
+	font-size: 32px;
+	color: #000000;
+	text-align: left;
+	line-height: 36px;
+    	font-weight: bold;
+}
+
+
+.line {
+    max-width: 700px;
+    border-top: 1px solid #D2D9E2; 
+    padding: 14px 0px;"
+}
+
+.accordion {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 115px;
+}
+.toggle-box {
+  /* по умаолчанию скрыт */
+  display: none;
+}
+ 
+/* формируем внешний вид панелей аккордеона */
+ 
+.toggle-box + label { 
+    background: #FFFFFF;
+    font-family: Montserrat-ExtraBold;
+    font-weight: bold;
+    font-size: 18px;
+    color: #0059D9;
+    line-height: 24px;
+    cursor: pointer;
+    display: block;
+}
+
+label a, a:hover {   /* ? */
+	color: #ddd;
+}
+
+/* формируем внешний вид панелей при наведении */
+ 
+.toggle-box + label:hover {
+    color: #000000;
+}
+.toggle-box:hover + label:before {
+    color: #000000;
+}
+/* формируем внешний вид панелей при нажатии на них */
+ 
+.toggle-box + label:active {
+	color: #000000;
+}
+ 
+/* содержание блоков скрыто */
+ 
+.toggle-box + label + div {
+	opacity: 0.7;
+	font-family: PTMono-Regular;
+        color: #000000;
+	font-size: 14px;
+	line-height: 20px;
+        display: none;
+}
+ 
+/* при обработке флажка (checkbox) показываем блок с содержанием */
+ 
+.toggle-box:checked + label + div {
+	display: block;
+}
+ 
+/* формируем внешний вид кнопки переключателя на панели справа */
+ 
+.toggle-box + label:before {
+	content: "+";
+	font-family: Montserrat-ExtraBold;
+    	color:#0059D9;
+    	font-weight: bold; 
+    	font-size: 18px;  
+    	line-height: 24px; 
+    	display: block;
+    	float: right;
+}
+
+.toggle-box:checked + label:before {
+	transform: rotate(45deg);
+    	font-family: Montserrat-ExtraBold; 
+    	color: #000000;
+    	font-weight: bold;
+	font-size: 18px; 
+    	line-height: 24px;
+}
+.toggle-box:checked + label {
+    color: #000000;
+}
+ 
+/* оформляем блок с содержанием */
+ 
+.box{
+	width: 520px;
+    	height: 40px;
+	margin-top: 12px;
+    	margin-bottom: 6px;
+} 
+
+
+
+.third_container {
+    background: #25282A;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.block_9 {
+    width: 520px; 
+    height: 36px;
+	font-family: Montserrat-ExtraBold;
+	font-size: 32px;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 36px;
+    font-weight: bold;
+    margin: auto;    
+    margin-bottom: 8px;
+}
+
+.block_10 {
+    width: 520px; 
+    height: 20px;
+    opacity: 0.7;
+    font-family: PTMono-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 20px;
+    margin: auto;    
+    margin-bottom: 80px;
+}
+
+
+
+.block_work {
+    margin: auto;
+    width: 700px; 
+    height: 24px;
+    font-family: Montserrat-ExtraBold;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+
+
+
+.block_url {
+    margin: auto;
+    width: 700px; 
+    height: 20px;
+    margin-bottom: 20px;
+    font-family: PTMono-Regular;
+    font-size: 14px;
+    color: #71ABFF;
+    text-align: center;
+    line-height: 20px;
+}
+
+    
+/*---------------------*//*-----------------------*/
+
+.pic_screen {
+    background-size: contain; /*cover*/
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-left: 198px;
+}
+
+
+.dot {
+  	height: 8px;
+  	width: 8px;
+  	background: #71ABFF;
+  	border-radius: 50%;
+  	display: inline-block;
+    cursor: pointer;
+    margin:auto;
+    margin-right: 8px;
+}
+
+
+.dot:hover {  	
+	background: #FFFFFF;
+    height: 8px;
+  	width: 8px;
+}
+
+.dot:active { 	/*.dot a:active {*/
+	background: #25282A;
+	border: 1px solid #71ABFF;
+    height: 7.5px;
+  	width: 7.5px;
+}
+
+#checked {
+	background: #25282A;
+	border: 1px solid #71ABFF;
+    height: 7.5px;
+  	width: 7.5px;
+}
+
+
+/*---------------------*//*--------------------------------*/
+
+.fourth_container {
+    background: #EFF1F2;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.block_11 {
+    max-width: 700px;
+    margin: auto;
+    height: 36px;
+    margin-bottom: 16px;
+}
+
+.contact_info {
+	font-family: Montserrat-ExtraBold;
+	font-size: 32px;
+	color: #000000;
+	text-align: center;
+	line-height: 36px;
+        font-weight: bold;
+}
+
+.social a {
+    text-align:center;
+    cursor: pointer;
+    width:48px;
+    height:48px;
+    border-radius:46px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.facebook a {
+    background: #395A99;
+    margin:0px 8px;
+}
+
+.twitter a {
+    background: #51ADEF;
+    margin:0px 8px;
+}
+
+.telegram a {
+	background: #2CA5E0;
+    margin:0px 8px;
+}
+
+i.fa-facebook {
+	padding: 9px 17px 12.1px 14.7px;
+}
+
+i.fa-twitter {
+   padding: 8.3px 12.7px 14.6px 9px;
+}
+
+i.fa-paper-plane {
+    padding: 8px 11.8px 10.1px 6.1px;
+}
+
+.facebook a:hover {
+	background: #2d487a;
+    color:#FFFFFF;    
+}
+.twitter a:hover {
+	background: #408abf;
+	color:#FFFFFF;
+}
+.telegram a:hover {
+	background: #2384b3;
+    color:#FFFFFF;
+}
+
+.facebook a:active {
+	opacity: 0.7;
+	background: #395A99;
+}
+.twitter a:active {
+	opacity: 0.7;
+	background: #51ADEF;
+}
+.telegram a:active {
+	opacity: 0.7;
+	background: #2CA5E0;
+}
+
+.block_12 {
+    margin: auto;
+    width: 700px; 
+    margin-top: 20px;
+    margin-bottom:40px;
+}
+
+.txt_5 {
+	font-family: PTMono-Regular;
+	font-size: 14px;
+	color: #000000;
+	text-align: center;
+	line-height: 20px;
+}
+
+
+
+#inp_name {
+	margin-left: 150px;
+	margin-right: 13.5px;
+}
+
+
+
+.input_txtarea {
+	resize: none;
+	width: 684px;
+	background: #FFFFFF;
+	border: 1px solid rgba(31,64,111,0.20);
+	border-radius: 4px;
+    	font-family: PTSans-Regular;
+	font-size: 16px;
+	color: #000000;
+	line-height: 20px;
+    	margin: auto;
+    	margin-left: 150px;
+    	margin-top: 20px;
+    	margin-bottom:20px;
+}   
+
+.input_txtarea, placeholder {
+	padding-top: 6px;
+	padding-left: 12px;
+    	padding-bottom: 110px;
+}
+
+.a_tt {
+  display: inline-block;
+  border-radius: 4px;
+  background: #fdfdfd;
+  border: 1px solid rgba(31,64,111,0.20);
+  font-family: PTSans-Regular;
+  font-size: 16px;
+  color: #0059D9;
+  text-align: center;
+  line-height: 20px;
+  width: 699px;
+  height: 36px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: auto;
+  margin-left: 150px;
+}
+
+.a_tt span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.a_tt span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.a_tt:hover span {
+  padding-right: 25px; 
+}
+
+.a_tt:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn_send {
+	display: inline-block;
+  	width: 699px;
+  	height: 52px;
+  	background: #0059D9;
+	border: none;
+    	border-radius: 4px;
+  	font-family: Montserrat-ExtraBold;
+    	font-weight: bold;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-align: center;
+    	padding: 14px;
+	line-height: 24px;
+  	cursor: pointer;
+  	margin: auto;
+ 	margin-top: 20px;
+  	margin-left: 150px;  
+}
+
+</style>
+</head>
+<body>
+
+
+<div class = "first_container">
+
+	<div class = "photo"> </div>
+
+	<div class = "block_1"> 
+    	<div class = "name">Ксения Белькевич</div> 
+    </div>
+
+	<div class = "block_2"> 
+		<div class = "txt_1">Student Front-end Developer, Minsk</div>
+	</div>
+
+	<a href="#yak1" style = "text-decoration: none">
+    	<div class="contact_btn">Связаться</div>
+    </a>
+
+</div>
+
+<div class = "second_container">
+
+	<div class = "block_3"> 
+    	<div class = "txt_2">Ожидания от ШРИ</div> 
+    </div>
+
+
+<div class="accordion">
+
+  <div class = "line">
+  	<input class="toggle-box" id="block-1" type="checkbox" checked>
+    <label for="block-1">Свобода</label>
+  	<div class="box">
+    Разработка медиаплана, анализируя результаты рекламной кампании, нейтрализует эмпирический портрет потребителя.
+  	</div>
+  </div>
+  
+  <div class = "line">
+  	<input class="toggle-box" id="block-2" type="checkbox" >
+    <label for="block-2">Равенство</label>
+  	<div class="box">
+    Разработка медиаплана, анализируя результаты рекламной кампании, нейтрализует эмпирический портрет потребителя.
+  	</div>
+  </div>
+  
+  <div class = "line">
+  	<input class="toggle-box" id="block-3" type="checkbox" >
+    <label for="block-3">Братство</label>
+  	<div class="box">
+    Разработка медиаплана, анализируя результаты рекламной кампании, нейтрализует эмпирический портрет потребителя.
+  	</div>
+  </div>
+  
+  <div class = "line">
+  	<input class="toggle-box" id="block-4" type="checkbox" >
+    <label for="block-4">Трудоустройство</label>
+  	<div class="box">
+    Разработка медиаплана, анализируя результаты рекламной кампании, нейтрализует эмпирический портрет потребителя.
+  	</div>
+  </div>
+  
+
+</div>    
+
+
+<div class = "third_container">
+
+	<div class = "block_9">Мои работы</div> 
+
+	<div class = "block_10">Коллекция из нескольких практических работ</div>
+    
+    <div class = "block_work">Табличная верстка</div> 
+
+	<div class = "block_url">link</div>
+    
+    
+
+<div><img class = "pic_screen" src="https://simple-fauna.ru/wp-content/uploads/2018/01/zhiraf.jpg" width="600" height="377"></div>
+
+<div style = "text-align: center">
+  	<span class="dot" id = "checked"></span>
+  	<span class="dot"></span>
+  	<span class="dot"></span>
+  	<span class="dot"></span>
+	</div>
+
+</div>
+
+
+<div class = "fourth_container">
+
+	<div class = "block_11"> 
+    	<div class = "contact_info" id="yak1">Контактная информация</div> 
+    </div>
+    
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />    
+
+<div style="text-align: center; font-size: 0;">    
+	<div style="display: inline-block;" class="social facebook">
+	    	<a href = "https://www.facebook.com/kseniya.melekh" target = "_blank"><i class = "fa fa-facebook fa-2x"></i></a>    
+	</div>
+	<div style="display: inline-block;" class = "social twitter">
+    		<a href = "https://twitter.com/Kseniya15531717" target = "_blank"><i class = "fa fa-twitter fa-2x"></i></a>
+	</div>
+    
+    	<div style="display: inline-block;" class = "social telegram">
+    		<a href = "https://t.me/Kseniya_Bialkevich" target = "_blank"><i class = "fa fa-paper-plane fa-2x"></i></a>
+	</div>  
+</div>
+
+<div class = "block_12"> 
+		<div class = "txt_5">Рада любому предложению по поводу обучения, стажировки или работы. 
+        </div>
+</div>
+
+<style>
+.input_holder {
+	width: 100%;
+	max-width: 700px;
+	margin: auto;
+    font-size: 0;
+}
+.input_filed {
+	width: 50%;
+    display: inline-block;
+}
+@media screen and (max-width: 600px) {
+  input_filed {
+	width: 100%;
+    display: block;
+  }
+}
+
+.input_filed_input {
+    font-size: 16px;
+    width: 100%;
+}
+</style>
+
+
+<div class="input_holder">
+  <div class="input_filed">
+    <input class="input_filed_input" type="text" placeholder="Как вас зовут">
+  </div>
+  <div class="input_filed">
+    <input class="input_filed_input" type="text" placeholder="Почтовый ящик">
+  </div>
+</div>
+
+
+
+
+<textarea class = "input_txtarea" type="text" name="area" maxlength="200" formmethod="post" placeholder = "Сообщение"></textarea>
+ 
+<button class="a_tt" style="vertical-align:middle"><span>Прикрепить ТЗ</span></button>
+
+<button class = "btn_send">Отправить</button>
+
+
+
+
+</div>
+
+</body>
+</html>
